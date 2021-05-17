@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/fis/databases/HeartBit",
+      "type": "mssql.azure",
+      "connectionId": "ReadWriteConnection",
+      "secretStore": "LocalSecretsFile"
+    },
+    "mssql2": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/fis/databases/HeartBit",
+      "type": "mssql.azure",
+      "connectionId": "ReadOnlyConnection",
+      "secretStore": "LocalSecretsFile"
+    }
+  }
+}
